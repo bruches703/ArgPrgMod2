@@ -1,27 +1,28 @@
+
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios_guia_2;
-
-import java.util.Scanner;
 
 /**
  *
  * @author bruch
  */
-public class Ejercicio4 {
+public class Ejercicio3 {
+    
     public static void main (String[] args){
-        
-        double c, f;
-       
         Scanner leer = new Scanner(System.in);
         
-        System.out.println("Ingrese los grados celcius");
-        c = leer.nextDouble();
-        f= 32+(9*c/5);
-        System.out.println("El equivalente en fahrenheit es: " + f);
+        System.out.println("Ingrese frase");
+        String cadena = leer.nextLine();
         
-    }        
+        if(cadena.length()==8){
+            System.out.println("CORRECTO");
+        } else {
+            System.out.println("INCORRECTO");
+        }
+    }
 }
