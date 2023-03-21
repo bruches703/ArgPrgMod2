@@ -30,6 +30,7 @@ public class Ejercicio8 {
                 }
             }
              System.out.print("\n");
+
         }
     }
             

@@ -17,7 +17,9 @@ public class Ejercicio7 {
         
         int correctas=0, incorrectas=0;
         String cadena;
+        
         boolean salir=false;
+        
         do{
             System.out.println("Ingrese cadena: ");
             cadena = leer.nextLine();
@@ -25,17 +27,12 @@ public class Ejercicio7 {
               salir = true;  
             } else {
 
-                if(cadena.length()<=5){
-                    System.out.println(cadena.length());
-                    if("X".equalsIgnoreCase(cadena.substring(0,1)) && "O".equalsIgnoreCase(cadena.substring(3,4))){
-                       correctas++; 
-                    }
+                if(cadena.length()<=5 && "X".equalsIgnoreCase(cadena.substring(0,1)) && "O".equalsIgnoreCase(cadena.substring(4,5))){
+                    correctas++; 
                 } else {
                     incorrectas++;
                 }
             }
-            System.out.println(cadena.substring(0,1));
-            System.out.println(cadena.substring(4));
         }while(!salir);
         
         System.out.println("Ingresos correctos: " + correctas);
