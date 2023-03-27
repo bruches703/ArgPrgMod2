@@ -47,10 +47,8 @@ public class Ejercicio1 {
             default:
                 System.out.println("Opcion no válida, reinicie");
                 break;
-        }
+        }   
 
-        
-        System.out.println(dividicionDe_Y_(4, 5));
     }
     
     public static int menu(){
