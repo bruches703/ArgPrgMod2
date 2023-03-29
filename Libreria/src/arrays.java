@@ -1,3 +1,5 @@
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +20,14 @@ public class arrays {
                 matriz[2][0]=-4; matriz[2][1]=-2; matriz[2][2]=0;
                 
         return matriz;
+        }
+        
+        public static int[] cargaDeVector(int tam){
+            int[] vector = new int[tam];
+            for (int i = 0; i < tam; i++) {
+                //vector[i]=ingresoValor("Ingrese valor",leer); //Funcion en libreria deLecturaYEscritura
+            }
+            return vector;
         }
         
         public static void mostrarMatriz(int[][] matriz){
