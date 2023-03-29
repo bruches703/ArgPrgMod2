@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author bruch
  */
-public class deLectura {
+public class deLecturaYEscritura {
     
     public static String ingresoDeTexto(String texto, Scanner leer){
         //Texto es de tipo String, es la leyenda que se mostrara por pantalla
@@ -60,5 +60,8 @@ public class deLectura {
         System.out.println("MENÚ");
         System.out.println(texto);        
         return leer.nextInt();
+    }
+    public static void mostrar(String texto){
+        System.out.println(texto);
     }
 }
