@@ -14,8 +14,6 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args){
         String[][] sopa= new String[20][20];
-        String[] palabras= new String[5];
-        
         
     }
     
