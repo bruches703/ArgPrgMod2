@@ -20,12 +20,13 @@ public class ServicioPersona {
     }
     
     public Persona crearPersona(){
+        String sexo;
         System.out.println("Ingrese nombre: ");
         String nombre=leer.nextLine();
         System.out.println("Ingrese edad: ");
         int edad=leer.nextInt();
-        System.out.println("Ingrese sexo H/M/O: ");        
-        String sexo=leer.nextLine();
+        System.out.println("Ingrese sexo H/M/O: ");       
+        sexo=leer.nextLine();
         while(!"h".equalsIgnoreCase(sexo) && !"m".equals(sexo) && !"o".equals(sexo)){
             System.out.println("Error, reingrese el sexo: ");
             sexo=leer.nextLine();
